@@ -1,13 +1,14 @@
+dictionary_array = ["Below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+
 def substrings(string, dictionary)
-    string_words = string.split(' ')
-    dictionary_string = dictionary.join(' ')
     word_count = Hash.new(0)
-    string_words.each do |word|
-        if dictionary_string.scan(word).count > 0
-            word_count[word] = dictionary_string.scan(word).count
+    dictionary = dictionary.join(' ').downcase.split(' ')
+    dictionary.each do |word|
+        if string.scan(word).count > 0
+            word_count[word] = string.downcase.scan(word).count
         end
     end
-    puts word_count
+    word_count
 end
 
-substrings("part", ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"])
+puts substrings("below them black white red blue Below Go GO gO going go down how howdy Horn", dictionary_array)
