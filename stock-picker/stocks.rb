@@ -16,4 +16,6 @@ def stock_picker(stocks)
     puts "Your maximum profit is #{profit}, which you can make by buying on day #{buy_sell[0]} and selling on day #{buy_sell[1]}."
 end
 
-stock_picker([17,3,6,9,15,8,6,1,10])
+stock_picker([1,3,6,9,15,8,6,1,10])
+stock_picker([13333,1,6,9,15,8,6,2,10])
+stock_picker([10,10,11,6,9,15,8,6,2,10])
