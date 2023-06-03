@@ -19,10 +19,6 @@ def caesar_cipher(string, int)
   cipher_string = cipher_array.join('')
 end
 
-puts caesar_cipher('What a string!', 5)
-puts caesar_cipher('ThIs Is a LOnGeR TeSt!!!', 23)
-puts caesar_cipher('Th!$ T3$t h@s a L0t G0in6 On#@$%^&*(())', 11)
-
 # and now, just for funsies, a decipher
 
 def caesar_decipher(string, int)
@@ -44,5 +40,3 @@ def caesar_decipher(string, int)
   cipher_string = cipher_array.join('')
 end
 
-puts caesar_decipher('QeFp Fp x ILkDbO QbPq!!!', 23)
-puts caesar_decipher("Es!$ E3$e s@d l W0e R0ty6 Zy\#@$%i&*(())", 11)
